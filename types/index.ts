@@ -6,3 +6,12 @@ export interface ICustomButton {
   btnType: "button" | "submit" | "reset" | undefined;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
 }
+
+export interface ICustomFilter {
+  title: string;
+}
+
+export interface ISearchManufacturer {
+  manufacturer: string;
+  setManufacturer: React.Dispatch<React.SetStateAction<string>>;
+}
